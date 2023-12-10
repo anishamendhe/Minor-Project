@@ -1,0 +1,50 @@
+1. What is a process and process table?
+2. What are the different states of the process?
+3. What is a Thread?  
+4. What are the differences between process and thread?
+5. What are the benefits of multithreaded programming? 
+6. What is Thrashing? 
+7. What is Buffer?
+8. What is virtual memory? 
+9. Explain the main purpose of an operating system?
+10. What is demand paging?
+11. What is a kernel?
+12. What are the different scheduling algorithms?
+13. Describe the objective of multi-programming.
+14. What is the time-sharing system?
+15. What problem we face in computer system without OS?
+16. Give some benefits of multithreaded programming?
+18. What is the RR scheduling algorithm?
+19. Enumerate the different RAID levels?
+20. What is Banker’s algorithm?
+21. State the main difference between logical and physical address space?
+22. How does dynamic loading aid in better memory space utilization?
+23. What are overlays?
+24. What is fragmentation?
+25. What is the basic function of paging?
+26. How does swapping result in better memory management?
+27. Write a name of classic synchronization problems?
+28. What is the Direct Access Method?
+29. When does thrashing occur?
+30. What is the best page size when designing an operating system?
+31. What is multitasking?
+32. What is caching?
+33. What is spooling?
+34. What is the functionality of an Assembler?
+35. What are interrupts?
+36. What is GUI?
+37. What is preemptive multitasking?
+38. What is a pipe and when is it used?
+39. What are the advantages of semaphores?
+40. What is a bootstrap program in the OS?
+41. What is IPC?
+42. What are the different IPC mechanisms?
+43. What is the difference between preemptive and non-preemptive scheduling?
+44. What is the zombie process?
+45. What are orphan processes?
+46. What are starvation and aging in OS?
+47. Write about monolithic kernel?
+48. What is Context Switching?
+49. What is the difference between the Operating system and kernel?
+the operating system loads
+50. What is the difference between process and thread?

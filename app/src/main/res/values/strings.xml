@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Viva</string>
+    <string-array name="subject_options">
+        <item>Select a subject</item>
+        <item>Operating System</item>
+        <item>Computer Network</item>
+        <!-- Add more subjects as needed -->
+    </string-array>
+    <string name="select_subject_prompt">Select a subject</string>
+</resources>

@@ -1,0 +1,50 @@
+What is a process and process table?
+What are the different states of the process?
+What is a Thread?
+What are the differences between process and thread?
+What are the benefits of multithreaded programming?
+What is Thrashing?
+What is Buffer?
+What is virtual memory?
+Explain the main purpose of an operating system?
+What is demand paging?
+What is a kernel?
+What are the different scheduling algorithms?
+Describe the objective of multi-programming.
+What is the time-sharing system?
+What problem we face in computer system without OS?
+Give some benefits of multithreaded programming?
+What is the RR scheduling algorithm?
+Enumerate the different RAID levels?
+What is Banker’s algorithm?
+State the main difference between logical and physical address space?
+How does dynamic loading aid in better memory space utilization?
+What are overlays?
+What is fragmentation?
+What is the basic function of paging?
+How does swapping result in better memory management?
+Write a name of classic synchronization problems?
+What is the Direct Access Method?
+When does thrashing occur?
+What is the best page size when designing an operating system?
+What is multitasking?
+What is caching?
+What is spooling?
+What is the functionality of an Assembler?
+What are interrupts?
+What is GUI?
+What is preemptive multitasking?
+What is a pipe and when is it used?
+What are the advantages of semaphores?
+What is a bootstrap program in the OS?
+What is IPC?
+What are the different IPC mechanisms?
+What is the difference between preemptive and non-preemptive scheduling?
+What is the zombie process?
+What are orphan processes?
+What are starvation and aging in OS?
+Write about monolithic kernel?
+What is Context Switching?
+What is the difference between the Operating system and kernel?
+What is the difference between process and thread?
+What is PCB?
