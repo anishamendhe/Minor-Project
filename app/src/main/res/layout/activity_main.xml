@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,7 +8,6 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-
     <Spinner
         android:id="@+id/subjectSpinner"
         android:layout_width="match_parent"
@@ -17,31 +15,81 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:entries="@array/subject_options"
-        android:prompt="@string/select_subject_prompt" />
+        android:padding="8dp"
+        android:prompt="@string/select_subject_prompt"
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/numQuestionsEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter the number of questions" />
+        android:hint="Enter the number of questions"
+        android:padding="8dp" />
 
     <Button
         android:id="@+id/generateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="Generate Questions"
-        app:backgroundTint="#2196F3" />
+        android:textSize="16sp"
+        app:backgroundTint="#03A9F4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/playAudioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Listening"
+
+            app:backgroundTint="#3F51B5" />
+
+        <Button
+            android:id="@+id/recognizeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="Generate"
+
+            app:backgroundTint="#3F51B5" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="388dp"
+        android:layout_height="346dp"
         android:layout_weight="1">
 
         <TextView
             android:id="@+id/questionsTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
-            android:paddingTop="16dp"/>
+            android:paddingTop="16dp"
+            android:text="" />
     </ScrollView>
+
+    <Button
+        android:id="@+id/viewScoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="View Score" />
+
 </LinearLayout>

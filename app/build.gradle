@@ -1,19 +1,34 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.chaquo.python'
 }
 
 android {
     compileSdk 33
-
+    namespace "com.example.viva"
     defaultConfig {
         applicationId "com.example.viva"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            // On Apple silicon, you can omit x86_64.
+            abiFilters 'arm64-v8a', 'x86_64'
+        }
+        python {
+            version = "3.8"
+            buildPython "C:/Users/mendh/AppData/Local/Programs/Python/Python38/python.exe"
+        }
+        python{
+            pip {
+                // A requirement specifier, with or without a version number:
+                install "instaloader"
+            }
+        }
     }
 
     buildTypes {
@@ -22,6 +37,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    aaptOptions{
+        noCompress "tflite"
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -29,14 +47,31 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    sourceSets {
+        getByName("main") {
+            python.srcDir "src/main/python"
+        }
+    }
+    buildFeatures {
+        mlModelBinding true
+        viewBinding true
+    }
 }
 
-dependencies {
 
+
+dependencies {
     implementation 'androidx.core:core-ktx:1.7.0'
+    implementation files('libs/jlibrosa-1.1.8-SNAPSHOT-jar-with-dependencies.jar')
+    implementation 'org.tensorflow:tensorflow-lite:2.8.0'
+    implementation 'org.tensorflow:tensorflow-lite-select-tf-ops:2.8.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.1.0'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0'
+//    implementation 'androidx.navigation:navigation-fragment-ktx:2.6.0'
+//    implementation 'androidx.navigation:navigation-ui-ktx:2.6.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

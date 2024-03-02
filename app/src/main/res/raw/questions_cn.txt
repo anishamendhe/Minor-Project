@@ -1,0 +1,100 @@
+What is a computer network?
+Define networking.
+Explain the OSI model.
+Differentiate between a hub and a switch.
+What is a router, and how does it differ from a switch?
+Define the term "protocol" in the context of computer networks.
+Explain the concept of bandwidth.
+What is latency, and how does it affect network performance?
+Describe the difference between half-duplex and full-duplex communication.
+What is a subnet?
+Explain the star topology.
+Define bus topology.
+Describe the ring topology.
+What is a mesh topology?
+Compare and contrast the advantages of a centralized and decentralized network.
+What is an IP address?
+Differentiate between IPv4 and IPv6.
+What is subnetting?
+Explain the purpose of a subnet mask.
+Define DHCP.
+What is routing?
+Explain the difference between static and dynamic routing.
+Describe how a switch operates in a network.
+What is VLAN (Virtual Local Area Network)?
+What is TCP/IP?
+Explain the functions of TCP (Transmission Control Protocol).
+Describe the role of UDP (User Datagram Protocol).
+What is ICMP, and how is it used in networking?
+Define HTTP and HTTPS.
+Explain the purpose of DNS (Domain Name System).
+What is Wi-Fi?
+Explain the difference between a router and an access point.
+Define SSID.
+What is WEP and WPA in the context of wireless security?
+Define firewall.
+What is the purpose of an Intrusion Detection System (IDS)?
+Explain the concept of VPN (Virtual Private Network).
+Describe a Denial of Service (DoS) attack.
+What is encryption, and how is it used in network security?
+Define a modem.
+Explain the purpose of a bridge in networking.
+What is a gateway?
+Describe the function of a repeater.
+What is ARP (Address Resolution Protocol)?
+Explain the role of RIP (Routing Information Protocol).
+What is SNMP (Simple Network Management Protocol)?
+Define SMTP (Simple Mail Transfer Protocol).
+Describe the steps you would take to troubleshoot a network connectivity issue.
+What is a ping, and how is it used in network troubleshooting?
+Explain the purpose of a traceroute.
+Define URL (Uniform Resource Locator).
+What is HTTP response code 404?
+Explain the difference between GET and POST methods in HTTP.
+How can you measure network performance?
+What is QoS (Quality of Service) in networking?
+Explain the role of a network administrator.
+What is the purpose of network monitoring tools?
+Define IEEE 802.11.
+What is Ethernet?
+Explain the purpose of the TCP/IP model.
+Define cloud computing.
+What is the difference between public and private clouds?
+Explain the concept of virtualization in networking.
+What is 4G LTE?
+Define tethering in the context of mobile networks.
+Explain how VoIP works.
+What are the advantages of using VoIP?
+What is NFS (Network File System)?
+Explain the purpose of SMB (Server Message Block).
+Define SNMP traps.
+What is NetFlow?
+What is IoT, and how does it relate to networking?
+Explain the challenges of securing IoT devices in a network.
+What is a socket in networking?
+Explain the purpose of the HTTP protocol in web development.
+Define MAC address.
+Explain the role of the Data Link layer in the OSI model.
+What factors should be considered in designing a network?
+Explain the concept of redundancy in network design.
+What is supernetting?
+How does Variable Length Subnet Masking (VLSM) differ from traditional subnetting?
+Define NAT (Network Address Translation).
+Explain the purpose of a proxy server.
+What is a DMZ (Demilitarized Zone) in networking?
+Describe the role of a load balancer.
+What is the purpose of a content delivery network (CDN)?
+Define the term "bandwidth throttling."
+Explain the concept of tunneling in networking.
+What is a broadcast storm?
+Define a collision domain.
+What is a MAC table in networking?
+Explain the concept of packet switching.
+Describe the function of a network gateway.
+What is the purpose of a DNS cache?
+Define the term "jitter" in networking.
+Explain the role of a network proxy.
+What is a subnet calculator used for?
+Describe the concept of network segmentation.
+What is the purpose of a honeypot in network security?
+Define the term "multicast" in networking.
