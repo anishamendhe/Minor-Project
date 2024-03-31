@@ -1,30 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6AE6DEFF"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
 
+    <!-- Spinner for selecting subject -->
     <Spinner
         android:id="@+id/subjectSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_rounded_spinner"
         android:entries="@array/subject_options"
-        android:padding="8dp"
+        android:padding="10dp"
         android:prompt="@string/select_subject_prompt"
+        android:textColor="@android:color/black"
         android:textSize="16sp" />
 
+    <!-- EditText for entering number of questions -->
     <EditText
         android:id="@+id/numQuestionsEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_rounded_edittext"
         android:hint="Enter the number of questions"
-        android:padding="8dp" />
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Button to generate questions -->
+
+    <!-- Buttons for recording and generating -->
 
     <Button
         android:id="@+id/generateButton"
@@ -39,7 +50,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:orientation="horizontal">
 
         <Button
@@ -48,6 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Start Listening"
+            android:paddingBottom="12dp"
 
             app:backgroundTint="#3F51B5" />
 
@@ -57,22 +68,28 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_weight="1"
+            android:paddingBottom="12dp"
+
             android:text="Generate"
 
             app:backgroundTint="#3F51B5" />
     </LinearLayout>
 
+    <!-- TextView for displaying result -->
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textStyle="bold"
         android:textSize="18sp" />
 
+    <!-- ScrollView for displaying questions -->
     <ScrollView
-        android:layout_width="388dp"
-        android:layout_height="346dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1">
 
         <TextView
@@ -80,9 +97,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
-            android:text="" />
+            android:text=""
+            android:textSize="16sp" />
     </ScrollView>
 
+    <!-- Button to view score -->
     <Button
         android:id="@+id/viewScoreButton"
         android:layout_width="wrap_content"

@@ -1,6 +1,7 @@
 package com.example.viva
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.content.res.AssetManager
 import android.media.AudioRecord
@@ -63,13 +64,25 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private val TAG = "TfLiteASRDemo"
     private val SAMPLE_RATE = 16000
     private val DEFAULT_AUDIO_DURATION = -1
-    private val wavFilename = "deep.wav"
+    private val wavFilename = "sss.wav"
     private val TFLITE_FILE = "model.tflite"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val viewScoreButton = findViewById<Button>(R.id.viewScoreButton)
+        viewScoreButton.setOnClickListener {
+            // Get the score from the resultTextView
+            val resultTextView = findViewById<TextView>(R.id.resultTextView)
+            val score = resultTextView.text.toString()
+
+            // Create an Intent to start the ScoreActivity and pass the score as an extra
+            val intent = Intent(this, ScoreActivity::class.java)
+            intent.putExtra("score", score)
+            startActivity(intent)
+        }
+
 
         if (! Python.isStarted()) {
             Python.start(AndroidPlatform(this));
